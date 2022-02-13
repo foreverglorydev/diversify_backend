@@ -9,7 +9,8 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({origin: "http://localhost:3000"}));
+// app.use(cors({origin: "http://localhost:3000"}));
+app.use(cors({origin: "https://nft-frontend-alpha.vercel.app"}));
 
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
